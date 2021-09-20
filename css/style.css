@@ -6,9 +6,11 @@
 body{
     background-color: black;
 }
+
 .header-buttons{
     text-align: right;
     padding: 10px;
+    height: 50px;
 }
 .btn{
     background-color: gray;
@@ -24,11 +26,12 @@ body{
     justify-content: center;
     width: 50px;
     flex-shrink: 0;
+    color: lightgray;
 }
 .main-container{
-    /* min-height: 100px; */
+    min-height: 100px;
     display: flex;
-    height: calc(100% - 20px);
+    height: calc(100vh - 100px);
     padding-bottom: 50px;
 }
 
@@ -36,14 +39,23 @@ body{
     border: 1px solid;
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 2;
+    justify-content: center;
+    align-content: space-between;
+    overflow-y: auto;
+    height: 100%;
 }
 
 .user{
-    width: calc(100% / 5);
-    border: 1px solid;
+    width: 200px;
+    height: 100px;
+    border: 3px solid;
     position: relative;
-    min-height: 150px;
+    min-height: 100px;
+    padding-bottom: 5px;
+    transition: .3s;
+}
+.user:hover{
+    border: 3px solid springgreen;
 }
 
 .user img{
@@ -54,7 +66,7 @@ body{
 .user-name{
     position: absolute ;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 2px 15px;
     font-size: 14px;
     color: white;
