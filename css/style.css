@@ -8,7 +8,13 @@ body{
 }
 .header-buttons{
     text-align: right;
-    padding: 20px;
+    padding: 10px;
+}
+.btn{
+    background-color: gray;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
 }
 /* MAIN */  
 
@@ -22,7 +28,8 @@ body{
     background-color: gray;
     min-height: 100px;
     display: flex;
-    height: calc(100vh - 100px - 40px);
+    min-height: calc(100% - 20px);
+    padding-bottom: 50px;
 }
 
 .users-container{
@@ -40,18 +47,50 @@ body{
 }
 
 /* FOOTER */
-.footer-container {
+[class*="footer"]{
     display: flex;
-    background-color: white;
-    height: 80px;
 }
-.footer{
-    display: flex;
+.footer-container {
+    background-color: #232427;
+    color: white;
+    height: 50px;
+}
+.footer-section{
+    align-items: center;
+    flex-grow: 1;
+}
+
+.footer-section.middle{
+    flex-grow: 4;
     justify-content: center;
+}
+
+.footer-item{
+    padding: 0 15px;
+    font-size: 22px;
+    flex-direction: column;
     align-items: center;
 }
-.footer.middle{
-    flex-grow: 3;
+/* .footer-section .show-more-arrow{
+
+} */
+.footer-item-text{
+    font-size: 11px;
+    padding-top: 5px;
+}
+.footer-item .count{
+    font-size: 10px;
+}
+.footer-section.right{
+    justify-content: end;
+}
+.footer-section.right a{
+    text-decoration: none;
+    color: red;
+    padding: 15px 10px;
+}
+.footer-item .green-item{
+    color: #4BC800;
 }
 
 /* FOOTER END */
