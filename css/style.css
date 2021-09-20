@@ -13,7 +13,7 @@ body{
     height: 50px;
 }
 .btn{
-    background-color: gray;
+    background-color: #2D2D2E;
     color: white;
     padding: 5px 15px;
     border-radius: 10px;
@@ -40,14 +40,14 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: space-between;
+    align-content: flex-start;
     overflow-y: auto;
     height: 100%;
 }
 
 .user{
-    width: 200px;
-    height: 100px;
+    width: 230px;
+    height: calc(100% / 5);
     border: 3px solid;
     position: relative;
     min-height: 100px;
